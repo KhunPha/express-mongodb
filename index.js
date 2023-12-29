@@ -50,7 +50,7 @@ app.get("/books", async (req, res) => {
 })
 
 connectDB().then(() => {
-    const port = 8080
+    const port = 3000
     app.listen(port, () => {
         console.log("Server is running");
     })
