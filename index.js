@@ -17,12 +17,6 @@ const connectDB = async () => {
 }
 
 app.get("/", (req, res) => {
-    res.json({
-        data: "Hello World"
-    })
-})
-
-app.get("/add-note", async (req, res) => {
     try {
         await Book.insertMany([
             {
@@ -35,8 +29,12 @@ app.get("/add-note", async (req, res) => {
             }
         ])
     } catch (error) {
-        
+        console.log(error)
     }
+})
+
+app.get("/add-note", async (req, res) => {
+    
 })
 
 app.get("/books", async (req, res) => {
