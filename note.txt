@@ -1,1 +1,0 @@
-mongodb+srv://SophaEderson:ZTExLnHp4nzhmfEv@inventory-project.8nc7ace.mongodb.net/?retryWrites=true&w=majority
